@@ -180,7 +180,7 @@ export default function Home() {
         <title>Whitelist Dapp</title>
         <meta name="description" content="Whitelist-Dapp" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /> 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
       <div className={styles.main}>
@@ -190,12 +190,12 @@ export default function Home() {
             An NFT collection for those that like the cards!
           </div>
           <div className={styles.description}>
-            Total addresses that have joined: {numberOfWhitelisted} 
+            Total addresses that have joined: {numberOfWhitelisted} / 100
           </div>
           {renderButton()}
         </div>
         <div>
-          <img src="/images/priming-drawn-bad.png" className={styles.image} />
+          <img src="/images/priming-drawn-bad.png" className={styles.image} alt="mcgoogus priming"/>
         </div>
       </div>
 
